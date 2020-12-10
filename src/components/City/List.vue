@@ -61,7 +61,7 @@
       }
     },
     mounted () {
-      this.scroll = new BScroll(this.$refs.wrapper)
+      this.scroll = new BScroll(this.$refs.wrapper,{ mouseWheel: true, click: true, tap: true })
     },
     watch:{
       letter () {
